@@ -1,10 +1,22 @@
-# ===========================================
+# ============================================
 # CONVERSOR DE MONEDAS - VERSIÓN 1
 # Autor(a): Nombre del estudiante
-# ===========================================
+# ============================================
 
 soles = float(input("Ingrese la cantidad en soles: "))
 
-dolares = soles / 3.60
+print("1. Dólares")
+print("2. Euros")
 
-print("Equivale a", dolares, "dólares.")
+opcion = input("Seleccione una opción: ")
+
+if opcion == "1":
+    dolares = soles /3.60
+    print("Equivale a", dolares, "dólares.")
+
+elif opcion == "2":
+    euros = soles/4.20
+    print("Equivale a", euros, "euros.")
+
+else:
+    print("Opción no válida.")
